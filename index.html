@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Preview</h1>
-    <p>Whatever you make will appear here.</p>
+  <main class="pomodoro-container">
+    <h1>Pomodoro Timer</h1>
+    
+    <div class="mode-selector">
+      <button id="work-btn" class="mode-btn active" data-time="1500">Pomodoro</button>
+      <button id="short-break-btn" class="mode-btn" data-time="300">Short Break</button>
+      <button id="long-break-btn" class="mode-btn" data-time="900">Long Break</button>
+    </div>
+
+    <div class="timer-display">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="control-btn primary">Start</button>
+      <button id="reset-btn" class="control-btn secondary">Reset</button>
+    </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
